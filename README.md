@@ -1,4 +1,4 @@
-##JavaScript Challenge: Password Generator
+#JavaScript Challenge: Password Generator
 
 **Description:  A password generates according to the user's selection.** 
 
