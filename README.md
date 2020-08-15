@@ -1,7 +1,6 @@
-# Week-3-Challenge
-**JavaScript Challenge: Password Generator**
+#JavaScript Challenge: Password Generator
 
-Description:  A password generates according to the user's selection.  
+**Description:  A password generates according to the user's selection.  
 
 When the user clicks the "Generate Password" button they receive the first prompt asking for the password length they desire.  This generator can create a password from 8 to 128 characters.
 If a prompt is received outside that range the user will receive a message to try again.
