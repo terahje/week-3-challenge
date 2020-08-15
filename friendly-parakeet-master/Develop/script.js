@@ -43,23 +43,24 @@ function generatePassword() {
       var confirmUpperCase = confirm("Click OK if you would like to include uppercase characters.");
     }
 
-  var passwordCharacters = []
+    // Assign user choice when selected
+    var passwordCharacters = []
 
-  if(confirmSpecialCharacter) {
-    passwordCharacters = passwordCharacters.concat(specialChar)
-  }
-  
-  if(confirmNumbericCharacter){
-    passwordCharacters = passwordCharacters.concat(number)
-  }
+      if(confirmSpecialCharacter) {
+        passwordCharacters = passwordCharacters.concat(specialChar)
+      }
+      
+      if(confirmNumbericCharacter){
+        passwordCharacters = passwordCharacters.concat(number)
+      }
 
-  if(confirmLowerCase) {
-    passwordCharacters = passwordCharacters.concat(alphaLower)
-  }
+      if(confirmLowerCase) {
+        passwordCharacters = passwordCharacters.concat(alphaLower)
+      }
 
-  if(confirmUpperCase) {
-    passwordCharacters = passwordCharacters.concat(alphaUpper)
-  }
+      if(confirmUpperCase) {
+        passwordCharacters = passwordCharacters.concat(alphaUpper)
+      }
 
   console.log(passwordCharacters)
 
