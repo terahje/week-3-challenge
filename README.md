@@ -1,4 +1,4 @@
-# week-3-challenge
+# Week-3-Challenge
 **JavaScript Challenge: Password Generator**
 
 Description:  A password generates according to the user's selection.  
