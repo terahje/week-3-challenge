@@ -28,11 +28,20 @@ function generatePassword() {
   // Repeat back what the user choose for password length 
     alert("Your password will have " + confirmLength + " characters.")
     
-    // Determine parameters of passwords
+    // Determine Character type parameters of passwords
     var confirmSpecialCharacter = confirm("Click OK if you would like to include special characters.");
     var confirmNumbericCharacter = confirm("Click OK if you would like to include numberic characters.");
     var confirmLowerCase = confirm("Click OK if you would like to include lowercase characters.");
-    var confirmUpperCase = confirm("Click OK if you would like to include uppercase characters");
+    var confirmUpperCase = confirm("Click OK if you would like to include uppercase characters.");
+
+    // loop if no Character type parameters are selected
+    while(confirmLowerCase === false && confirmUpperCase === false && confirmSpecialCharacter === false && confirmNumbericCharacter === false) {
+      alert("You must choose at least one character type. Try again.");
+      var confirmSpecialCharacter = confirm("Click OK if you would like to include special characters.");
+      var confirmNumbericCharacter = confirm("Click OK if you would like to include numberic characters.");
+      var confirmLowerCase = confirm("Click OK if you would like to include lowercase characters.");
+      var confirmUpperCase = confirm("Click OK if you would like to include uppercase characters.");
+    }
 
   var passwordCharacters = []
 
@@ -61,13 +70,6 @@ function generatePassword() {
     randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
   }
   return randomPassword;
-
-
-
-
-
-
-
 }
 
 // Get references to the #generate element
@@ -81,6 +83,4 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+document.querySelector("#generate").addEventListener("click", writePassword);
