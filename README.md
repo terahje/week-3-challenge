@@ -11,4 +11,3 @@ Simularly to the previous prompts, one of the charater type prompts must be sele
 After all prompts are met, a password is generated in the box where the user can copy and paste it anywhere they would need the password.
 
 Technologies Used: HTML, CSS, JavaScript
-
