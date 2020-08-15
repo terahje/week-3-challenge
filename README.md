@@ -14,4 +14,4 @@ Technologies Used: HTML, CSS, JavaScript
 
 https://terahje.github.io/week-3-challenge/
 
-![] (pwGenertor.jpg)
+![](week-3-challenge/pwGenertor.jpg)
