@@ -42,7 +42,6 @@ function generatePassword() {
       var confirmLowerCase = confirm("Click OK if you would like to include lowercase characters.");
       var confirmUpperCase = confirm("Click OK if you would like to include uppercase characters.");
     }
-
     // Assign user choice when selected
     var passwordCharacters = []
 
